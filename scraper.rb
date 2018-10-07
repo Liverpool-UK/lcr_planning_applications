@@ -1,7 +1,7 @@
 require 'uk_planning_scraper'
 require 'scraperwiki'
 
-auths = UKPlanningScraper::Authority.tagged('london')
+auths = UKPlanningScraper::Authority.tagged('liverpoolcityregion')
 
 auths.each_with_index do |auth, i|
   begin
