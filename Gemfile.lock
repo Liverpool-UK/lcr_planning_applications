@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/adrianshort/uk_planning_scraper.git
-  revision: 8a070e17732b3304e7e73a81cb7538795fe604c0
-  ref: 8a070e1
+  revision: 4bb36da2ad43d88bb15a7626f9474d037f044832
   specs:
     uk_planning_scraper (0.2.0)
       http
@@ -70,7 +69,7 @@ DEPENDENCIES
   uk_planning_scraper!
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.16.5
