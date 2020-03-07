@@ -7,7 +7,6 @@ auths = UKPlanningScraper::Authority.tagged('liverpoolcityregion')
 
 params = %w(validated_days decided_days)
 
-if false
 auths.each_with_index do |auth, i|
   puts "#{i + 1} of #{auths.size}: Scraping #{auth.name}"
   params.each_with_index do |param, j|
@@ -20,7 +19,6 @@ auths.each_with_index do |auth, i|
       puts e
     end
   end
-end
 end
 
 # Helper function to look for possible postcodes in a given address
