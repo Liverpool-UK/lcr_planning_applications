@@ -52,7 +52,7 @@ puts
 
 # Now geocode a bunch of applications
 # We don't just do all of them, as we don't want to overload postcodes.io
-geocode_count = 200
+geocode_count = ENV['MORPH_POSTCODE_GEOCODE_COUNT'] || 200
 while geocode_count > 0 do
   # Get a bunch of not-yet-geocoded entries
   not_geocoded = ScraperWiki.select('neighbourhood_postcode from data where neighbourhood_latitude is null group by neighbourhood_postcode limit 100')
